@@ -1,5 +1,8 @@
 package com.example.zap.model;
 
+import com.example.zap.config.ConfigFirebase;
+import com.google.firebase.database.DatabaseReference;
+
 public class User {
     private String id;
     private String nome;
@@ -8,6 +11,11 @@ public class User {
 
     public User() {
 
+
+    }
+    public void salvarUsuario(){
+        DatabaseReference databaseReference = ConfigFirebase.getFirebase();
+        databaseReference.child("usuarios").child(getId()).setValue(this);//posso pasar um objeto ou usuario
     }
 
     public String getId() {

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "592257247047",
+    "firebase_url": "https://zap-clone-a40aa.firebaseio.com",
+    "project_id": "zap-clone-a40aa",
+    "storage_bucket": "zap-clone-a40aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592257247047:android:a0919ed45e2ae42b",
+        "android_client_info": {
+          "package_name": "com.example.zap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592257247047-4stm4j49cm5e9jca3qko123d2ho9dro6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zap",
+            "certificate_hash": "f1e1d6ea0e6027de787c380d4c53f26d3c5f6624"
+          }
+        },
+        {
+          "client_id": "592257247047-tge0r14i6uj1scmn9bjpv0ehjghql5gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhjm10UwgkB8L2TWuPcrO4ffQ1z-Y1uBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592257247047-tge0r14i6uj1scmn9bjpv0ehjghql5gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

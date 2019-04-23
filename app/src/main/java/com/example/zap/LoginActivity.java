@@ -14,15 +14,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.zap.config.ConfigFirebase;
 import com.example.zap.helper.Permission;
 import com.example.zap.helper.Preferencias;
 import com.github.rtoshiro.util.format.SimpleMaskFormatter;
 import com.github.rtoshiro.util.format.text.MaskTextWatcher;
+import com.google.firebase.database.DatabaseReference;
 
 import java.util.HashMap;
 import java.util.Random;
 
 public class LoginActivity extends AppCompatActivity {
+    private DatabaseReference referenciaDatabase;
 
 
     protected SimpleMaskFormatter simpleMaskNome,simpleMaskDDD,simpleMaskDDI,simpleMaskPhoneNumber;
@@ -38,6 +41,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         Permission.validaPermissoes(1,this,permissoesNecessarias);
+
+        referenciaDatabase = ConfigFirebase.getFirebase();
+        referenciaDatabase.child("Pontos").setValue("800");
 
     }
     public void abrirCadastroUsuario( View view){

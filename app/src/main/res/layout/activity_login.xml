@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".LoginActivity">
 
 
     <ImageView
@@ -18,68 +19,62 @@
         android:contentDescription="@string/app_name" />
 
     <EditText
-        android:id="@+id/editTxtNomeID"
-        android:layout_width="356dp"
+        android:id="@+id/eTxtEmail"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="314dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="309dp"
         android:ems="10"
-        android:hint="Digite seu usuário"
-        android:inputType="textPersonName"
-        android:textColor="@color/txtColorPrimary" />
+        android:hint="Digite seu e-mail"
+        android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTxtDdiId"
-        android:layout_width="50dp"
+        android:id="@+id/eTxtPass"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="326dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="321dp"
         android:ems="10"
-        android:hint="+55"
-        android:inputType="phone"
-        android:textColor="@color/txtColorPrimary" />
+        android:hint="Digite sua senha"
+        android:inputType="textPassword" />
 
-    <EditText
-        android:id="@+id/editTxtDddId"
-        android:layout_width="50dp"
+    <Button
+        android:id="@+id/btnLogar"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="327dp"
-        android:layout_toEndOf="@+id/editTxtDdiId"
-        android:ems="10"
-        android:hint="11"
-        android:inputType="phone"
-        android:textColor="@color/txtColorPrimary" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="489dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/btn_logar"
+        android:textColor="#F3EFEF" />
 
-    <EditText
-        android:id="@+id/editTxtPhoneNumber"
-        android:layout_width="245dp"
+    <TextView
+        android:id="@+id/txtMsgNcadastro"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="324dp"
-        android:ems="10"
-        android:hint="99999999"
-        android:inputType="phone"
-        android:singleLine="false"
-        android:textColor="@color/txtColorPrimary" />
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="abrirCadastroUsuario"
+        android:text="@string/txt_possui_cadastro" />
 
-    <Button
-        android:id="@+id/btnCadastrarId"
-        android:layout_width="225dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="87dp"
-        android:layout_marginBottom="188dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/btn_cadastrar"
-        android:textColor="@color/txtColorPrimary" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="266dp"
+        android:text="@string/app_title"
+        android:textColor="#2196F3"
+        android:textSize="30sp" />
 
 </RelativeLayout>

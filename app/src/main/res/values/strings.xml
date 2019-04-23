@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Zap</string>
     <string name="btn_cadastrar">Cadastrar</string>
+    <string name="btn_logar">Logar</string>
     <string name="title_activity_login">hahaha</string>
     <string name="app_title">ZAP</string>
     <string name="txt_validador">Validação</string>
     <string name="btn_validar">Validar</string>
+    <string name="txt_possui_cadastro">Não possui cadastro? Clique aqui !</string>
 
 </resources>
